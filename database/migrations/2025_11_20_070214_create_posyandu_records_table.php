@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('posyandu_records', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('child_name');
             $table->enum('gender', ['L', 'P']);
             $table->date('birth_date');
             $table->integer('age_months');
